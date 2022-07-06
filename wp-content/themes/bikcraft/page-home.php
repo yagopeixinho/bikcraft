@@ -3,16 +3,8 @@
 ?>
 		<?php get_header();?>
 			<?php if(have_posts()) : while(have_posts())  : the_post(); ?>
-				<section class="introducao">
-					<div class="container">
-						<h1><?php the_field('titulo_introducao');?></h1>
-						<blockquote class="quote-externo">
-							<p><?php the_field('quote_introducao');?></p>
-							<cite><?php the_field('citacao_introducao');?></cite>
-						</blockquote>
-						<a href="/bikcraft/produtos/" class="btn">Orçamento</a>
-					</div>
-				</section>
+		
+				<?php include(TEMPLATEPATH . "/inc/introducao.php")?>
 				
 				<section class="produtos container animar">
 					<h2 class="subtitulo">Produtos</h2>
@@ -51,7 +43,7 @@
 
 				</section>
 				<!-- Fecha Produtos -->
-
+ 
 				<section class="portfolio">
 					<div class="container">
 						<h2 class="subtitulo">Portfólio</h2>

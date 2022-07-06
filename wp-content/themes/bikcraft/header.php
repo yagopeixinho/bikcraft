@@ -33,7 +33,7 @@
 					<ul>
 						<li><a href="/bikcraft/sobre/">Sobre</a></li>
 						<li><a href="/bikcraft/produtos/">Produtos</a></li>
-						<li><a href="/bikcraft/portifolio/">Portfólio</a></li>
+						<li><a href="/bikcraft/portfolio/">Portfólio</a></li>
 						<li><a href="/bikcraft/contato/">Contato</a></li>
 					</ul>
 				</nav>
