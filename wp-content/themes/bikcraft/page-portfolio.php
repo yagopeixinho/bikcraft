@@ -16,7 +16,7 @@
 							<cite><?php the_sub_field('cliente')?></cite>
 						</blockquote>
 					</li>
-				<?php endwhile; else: endif;?>
+				<?php endwhile; else: endif; ?>
 			</ul>
 		</section>
 
