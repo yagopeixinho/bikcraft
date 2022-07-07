@@ -22,4 +22,36 @@ function my_custom_sizes() {
 }
 add_action('after_setup_theme', 'my_custom_sizes');
 
-?>
+// Custom Post Type
+function custom_post_type_produtos(){
+    register_post_type('produtos', array(
+        'label' => 'Produtos',
+        'description' => 'Produtos',
+        'public' => true,
+        'show_ui' => true,
+        'show_in_menu' => true,
+        'capability_type' => 'post',
+        'map_meta_cap' => true,
+        'hierarchical' => false,
+        'rewrite' => array('slug' => 'produtos', 'with_front' => true),
+        'query_var' => true,
+        'supports' => array('title', 'editor', 'page-attributes', 'pot-formats'),
+
+        'labels' => array(
+            'name' => 'Produtos',
+            'singular_name' => 'Produto',
+            'menu_name' => 'Produtos',
+            'add_new' => 'Adicionar novo',
+            'add_new_item' => 'Adicionar novo produto',
+            'edit' => 'Editar',
+            'edit_item' => 'Editar produto',
+            'new_item' => 'Adicionar produto',
+            'view' => 'Ver Produto',
+            'view_item' => 'Ver produto',
+            'search_items' => 'Procurar produtos',
+            'not_found' => 'Nenhum produto encontrado',
+            'not_found_in_trash' => 'Nenhum produto encontrado no lixo'
+        )
+    ));
+};
+add_action('init', 'custom_post_type_produtos');

@@ -1,4 +1,5 @@
 <?php $sobre = get_page_by_title('sobre'); ?>
+
 <section class="qualidade container">
 	<h2 class="subtitulo"><?php the_field('titulo_qualidade', $sobre)?></h2>
 		<img src="<?php the_field('logo_bikcraft', $sobre)?>" alt="Bikcraft">
